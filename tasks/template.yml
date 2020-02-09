@@ -1,0 +1,10 @@
+---
+# Template configuration files for activemq
+
+- name: template is copied
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  become: true
+  loop: "{{ activemq_templates_copy }}"
+  when: activemq_copy_templates
