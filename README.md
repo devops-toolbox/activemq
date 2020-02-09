@@ -8,10 +8,10 @@ activemq: Activemq
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.activemq](https://galaxy.ansible.com/devops-toolbox.activemq)
+[https://galaxy.ansible.com/devopstoolbox.activemq](https://galaxy.ansible.com/devopstoolbox.activemq)
 
 ```bash
-ansible-galaxy install devops-toolbox.activemq
+ansible-galaxy install devopstoolbox.activemq
 ```
 
 Requirements
@@ -60,7 +60,7 @@ Example Playbook
   tasks:
     - name: activemq is configured
       import_role:
-        name: devops-toolbox.activemq
+        name: devopstoolbox.activemq
       vars:
         activemq_packages_state: present
         activemq_remove_packages: true
@@ -89,4 +89,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
